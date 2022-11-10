@@ -10,47 +10,47 @@ Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu 
 
 ## Stateless & Stateful Widget
 
-Stateless widget adalah widget yang bersifat statis dan menggunakan base configuration yang dimuat pada saat inisiasi awal widget. Stateful widget adalah widget yang bersifat dinamis dan dapat diperbaharui kapan saja berdasarkan perilaku pengguna atau ketika terjadi perubahan data.
+_Stateless widget_ adalah widget yang bersifat statis dan menggunakan _base configuration_ yang dimuat pada saat inisiasi awal _widget_. _Stateful widget_ adalah _widget_ yang bersifat dinamis dan dapat diperbaharui kapan saja berdasarkan perilaku pengguna atau ketika terjadi perubahan data.
 
 ## Widgets
 
 - AppBar                    : Menampilkan sebuah bar di bagian atas aplikasi Flutter
 
-- Center                    : Membuat child widgets memiliki center alignment
+- Center                    : Membuat _child widgets_ memiliki center alignment
 
-- Column                    : Menyusun child widgets secara vertikal
+- Column                    : Menyusun _child widgets_ secara vertikal
 
 - Text                      : Menampilkan tulisan/teks
 
 - Floating Action Button    : Menampilkan button yang berbentuk lingkaran yang melayang di atas konten dair aplikasi
 
-- Row                       : Menyusun child widgets secara horizontal
+- Row                       : Menyusun _child widgets_ secara horizontal
 
-- Visibility                : Mengatur visibility dari child widgets
+- Visibility                : Mengatur _visibility_ dari _child widgets_
 
-- Container                 : Menambahkan padding / margin
+- Container                 : Menambahkan _padding_ / _margin_
 
 - Icon                      : Menambahkan logo/icon
 
 ## Fungsi `setState()`
 
-`setState()` berfungsi untuk menandakan framework bahwa internal state dari sebuah objek telah diubah yang dapat mempengaruhi tampilan untuk user. `setState()` perlu digunakan untuk meng-update state dari sebuah objek. Variabel yang terdampak dari `setState()` adalah `_counter`.
+`setState()` berfungsi untuk menandakan _framework_ bahwa internal _state_ dari sebuah objek telah diubah yang dapat mempengaruhi tampilan untuk _user_. `setState()` perlu digunakan untuk meng-_update_ _state_ dari sebuah objek. Variabel yang terdampak dari `setState()` adalah `_counter`.
 
 ## Const vs Final
 
-Const   : variabel yang bersifat immutable dengan value yang konstan dan harus sudah di-set pada saat compile time.
+Const   : variabel yang bersifat _immutable_ dengan _value_ yang konstan dan harus sudah di-_set_ pada saat _compile time_.
 
-Final   : variabel yang diinisiasikan pada saat run-time, maka tidak dapat dilakukan penyetelan ulang.
+Final   : variabel yang diinisiasikan pada saat _run-time_, maka tidak dapat dilakukan penyetelan ulang.
 
 ## Tahap pengimplementasian
 
 1. Membuat aplikasi baru bernama `counter_7`.
 
-2. Mengganti beberapa kode pada default code yang disediakan Flutter, diantaranya :
+2. Mengganti beberapa kode pada _default code_ yang disediakan Flutter, diantaranya :
 
-    a. Mengganti title pada `MyHomePage` dari "Flutter Demo Home Page" menjadi "Program Counter"
+    a. Mengganti _title_ pada `MyHomePage` dari "Flutter Demo Home Page" menjadi "Program Counter"
 
-    b. Menambahkan function pada class `_MyHomePageState` :
+    b. Menambahkan _function_ pada _class_ `_MyHomePageState` :
 
     ```dart
     void _decrementCounter() {
@@ -62,7 +62,7 @@ Final   : variabel yang diinisiasikan pada saat run-time, maka tidak dapat dilak
     }
     ```
 
-    c. Membuat conditionals untuk menampilkan teks "GANJIL" atau "GENAP" :
+    c. Membuat _conditionals_ untuk menampilkan teks "GANJIL" atau "GENAP" :
 
     ```dart
     _counter % 2 == 0
@@ -70,7 +70,7 @@ Final   : variabel yang diinisiasikan pada saat run-time, maka tidak dapat dilak
         : const Text('GANJIL', style: TextStyle(color: Colors.blueAccent)),
     ```
 
-    d. Membuat 2 buttons untuk increment atau decrement `_counter` :
+    d. Membuat 2 _buttons_ untuk _increment_ atau _decrement_ `_counter` :
 
     ```dart
     floatingActionButton: Row(
@@ -98,4 +98,3 @@ Final   : variabel yang diinisiasikan pada saat run-time, maka tidak dapat dilak
         ],
     ),
     ```
-3. 
