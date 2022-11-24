@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-
+      drawer: buildDrawer(context),
       // App main body
       body: Center(
         child: Column(
