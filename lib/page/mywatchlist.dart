@@ -28,6 +28,10 @@ class _WatchlistBoxState extends State<WatchlistBox> {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 3),
       decoration: BoxDecoration(
+        border: Border.all(
+          color: widget.data.watched ? Colors.green : Colors.grey,
+          width: 2,
+        ),
         borderRadius: BorderRadius.circular(6),
       ),
       child: ListTile(
